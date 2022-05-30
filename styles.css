@@ -29,13 +29,6 @@ body {
 
 
 
-/* ~~~~~~~~~~~~~~ CONTROLS ~~~~~~~~~~~~~~~~ */
-
-
-
-/* ~~~~~~~~~~~~~~HOME PAGE~~~~~~~~~~~~~~~~ */
-
-
 div.wrapper {
   display: flex;
   flex-direction: row-reverse;
@@ -61,7 +54,7 @@ h1 {
 
 .symbol-1-b{
 height: 230px;
-text-shadow: 1.5px 1.5px 2px #787fac;
+
 }
 
 
@@ -148,7 +141,7 @@ section.box-3 {
   border: 2px solid red;
 }
 
-div.chakra-box {
+.chakra-box {
   height: 250px;
   width: 800px;
   border-radius: 0.5em;
@@ -158,29 +151,35 @@ div.chakra-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 250px;
+  width: 800;
   color: white;
   background-color: #787fac;
   border-radius: 0.5em;
+
 }
 
-#cb-2{
+
+
+.chakra-box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 250px;
+  width: 800px;
   background: white;
   color: #feaaaa;
   border-radius: 0.5em;
-}
-
-#cb-3{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  background: none;
+  border-color: #787fac
   color: #feaaaa;
-  border-radius: 0.5em;
   border: 2px solid red;
+
 }
 
-h3.message{
+.message{
+
   color: #787fac;
   font-size: 15px;
   font-family: Zapfino;
@@ -188,7 +187,8 @@ h3.message{
 }
 
 
-button.clear-btn{
+.clear-btn{
+
   color: #787fac;
   background: white;
   text-shadow: 1.5px 1.5px 2px #feaaaa;
@@ -201,6 +201,9 @@ button.clear-btn{
 
 }
 
+.hidden{
+  display: none;
+}
 
 .manf-btn{
   font-family: SignPainter;
@@ -217,9 +220,9 @@ button.clear-btn{
   transition: 300ms;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20)
 }
-button.clear-btn:hover {
+/* button.clear-btn:hover {
   background: #eca7aaa1;
-}
+} */
 .manf-btn:hover {
   background: white url("assets/peach-lotus-2.png") no-repeat top;
 }

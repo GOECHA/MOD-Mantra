@@ -7,18 +7,17 @@ var clearBtn = document.querySelector('.clear-btn');
 var manifestBtn = document.querySelector('.manf-btn');
 var hideSymbol = document.querySelector('.symbol-1-b');
 var welcomeBox = document.querySelector('#cb-1');
-var showMessage = document.querySelector('#cb-2');
-var showMessage2 = document.querySelector('#cb-3');
+var showMessage = document.querySelector('.chakra-box2');
 var message = document.querySelector('message');
-var radMa = document.querySelector('.affirmation')
-var radAf = document.querySelector('.mantra')
+var radMa = document.querySelector('#mantra')
+var radAf = document.querySelector('#affirmation')
 var radios = document.querySelector('.box-2')
 var resetMsg = document.querySelector('.flip-box')
-
+var text = document.querySelector('.text')
 
 //---> EVENT LISTENERS
 manifestBtn.addEventListener('click', viewMessage)
-clearBtn.addEventListener('click', clearScreen)
+// clearBtn.addEventListener('click', clearScreen)
 
 
 
@@ -26,17 +25,15 @@ clearBtn.addEventListener('click', clearScreen)
 //---> EVENT HANDLERS
 
 function viewMessage(){
-  event.preventDefault()
-  hideSymbol.classList.add("hidden")
- if (radAf === radios.onclick){
-   return randomizeAf();
- } else if (radMa === radios.onclick) {
-   return randomizeMa();
+ if (radAf.checked === true){
+   randomizeAf();
+ } else if (radMa.checked === true) {
+   randomizeMa();
  }else {
    alert(`Positivity is just one choice below`)
-
  }
 }
+
 
 function clearScreen() {
   hideSymbol.classList.add('hidden');
@@ -46,13 +43,15 @@ function clearScreen() {
 // welcomeBox.classList.add("hidden")
 
 function randomizeAf(){
+  clearScreen()
   var randA = affirmations[Math.floor(Math.random() * affirmations.length)];
-  showMessage.innerText = randA
+  text.innerText = randA
 };
 
 function randomizeMa(){
-  var randM = affirmations[Math.floor(Math.random() * mantras.length)];
-  showMessage.innerText = randM
+  clearScreen()
+  var randM = mantras[Math.floor(Math.random() * mantras.length)];
+  text.innerText = randM
 };
 
 function rstMsg(){
