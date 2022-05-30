@@ -7,178 +7,229 @@ white - #ffffff;
 black - #000000;
 */
 
+
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
+
 
 body {
   display: flex;
-  background-image: url("assets/1x/lotus2a.png"), url('./assets/background-modmantra.png');
-
-  background-size: cover;
-  background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
+  font-family: Zapfino;
+  background-image: url('./assets/background-modmantra.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 30px;
+  /* border: 2px solid red; */
+}
 
+
+
+/* ~~~~~~~~~~~~~~ CONTROLS ~~~~~~~~~~~~~~~~ */
+
+
+
+/* ~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~ */
+
+
+div.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 1000px;
+  height: 300px;
 }
 
 h1 {
-  justify-content: center;
-  text-align: center;
-  margin: 20px;
-  border: 2px solid red;
+  width: 500px;
+  font-size: 80px;
+  text-shadow: 1.5px 1.5px 2px #787fac;
+  margin: -50px;
 }
 
+/* ~~~~~~~~~~~~~~IMAGES~~~~~~~~~~~~~~~ */
 
+.white-lotus{
+  width: 150px;
+  height: 125px;
+  text-shadow: 1.5px 1.5px 2px #787fac;
+}
 
-.wrapper {
+.symbol-1-b{
+height: 200px;
+}
+
+/* ~~~~~~~~~~~~~~FLEX-SECTION~~~~~~~~~~~~~~~ */
+fieldset{
   display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  font-family: 'Quicksand', sans-serif;
+  height:500px
+  width: 850px;
+  border-style: dashed;
   color: #ffffff;
-  width: 1000px;
-  height: 200px;
-  justify-content: flex-start;
-  border: 2px solid red;
+  border-width: 3px;
+  border-color: ##feaaaa;
+  border-image: initial;
 }
 
-
-
-.project-title {
-  font-size: 35px;
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-  border: 2px solid red;
+ .box-1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    opacity: .75;
 }
 
-
-.title {
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
-  font-size: 40px;
-  border: 2px solid red;
+legend {
+  color: white;
+  font-size: 55px;
+  font-family: SignPainter;
+  text-shadow: 1.5px 1.5px 2px #787fac;
 }
 
-.box {
-  display: flex;
-  width: 100px;
-  border: 2px solid red;
-}
-
-.which-message {
-  font-family: 'Quicksand', sans-serif;
-  color: #ffffff;
-  font-size: 25px;
-  border: 2px solid red;
-justify-content: center;
-}
-
-.box-2 {
-  display: flex;
-  justify-content: center;
-  border-color: white;
+.choose-text{
+font-size: 30px;
 }
 
 
 section.message-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 700px;
-  height: 140px;
+  height: 150px;
+  color: #787fac;
+  top: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1.5px 1.5px 2px #feaaaa;
   background-color: white;
-  opacity: .7;
   border-radius: 0.5em;
-  position: sticky;
   left: 75px;
   line-height: 90px;
-  text-align: center;
-  color: #787fac;
-  justify-content: center;
-  align-items: center;
-  top: 40px;
-  border-style: dashed;
-  font-size: 20px;
-  font-weight: bold;
+  padding-top: 30px;
 }
 
-legend{
- display: flex;
- flex-direction: row;
- font-size: 24.5px;
- align-items: center;
- width: 200px;
- height: 150px;
-
- }
-
-
-
-
-.positive-message {
-  display: flex;
-  font-family: 'Quicksand', sans-serif;
-  width 200px;
-  height 50px;
-  justify-content: center;
-  border: 2px solid red;
-}
 
 input {
+  color: rebeccapurple;
   display: inline;
-  color: black;
   font-size: 15px;
   font-style: italic;
-  flex-direction: row;
-  border: 2px solid red;
 }
 
-.chakra-box {
+.box-2 {
   display: flex;
-  width: 850px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 800px;
   height: 150px;
-  background-color: white 60%,
-    border-radius: 0.5em;
-  flex-direction: row;
-  text-align: center;
-  color: white;
-  opacity: .5;
+  /* border: 2px solid red; */
+}
+
+section.box-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  width: 800px;
+  height:200px;
+
+}
+
+
+.box-4 {
+  display: flex;
+  align-items: center;
+  width: 850px;
+  height: 521px;
   border: 2px solid red;
 }
 
-.button {
-  background-color: #134d71;
-  font-family: 'Quicksand', sans-serif;
-  padding: 10px;
-  color: white;
-  border: none;
-  margin-top: 10px;
-  transition: 300ms;
-}
-.png {
-  cursor: url("./assets/cursor.png"), auto;
+div.chakra-box {
+  height: 250px;
+  width: 800px;
+  border-radius: 0.5em;
 }
 
-.chakra-lady{
-  height: auto;
-  width: auto;
-image: url("./assets/chakra-2.png");
-background-size: contain;
-background-repeat: no-repeat;
-}
-/* .disc {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-  border-radius: 80%;
-  cursor: pointer;
-  left: 50px;
-  top: 50px;
-  line-height: 100px;
-  text-align: center;
-  color: white;
+#cb-1{
+  display: flex;
   align-items: center;
-} */
+  justify-content: center;
+  color: white;
+  background-color: #787fac;
+  border-radius: 0.5em;
+}
+
+#cb-2{
+  background: white;
+  color: #feaaaa;
+  border-radius: 0.5em;
+}
+
+#cb-3{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: none;
+  color: #feaaaa;
+  border-radius: 0.5em;
+  padding-bottom: 4
+}
+
+.hidden{
+  display:none;
+}
+h3.message{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #787fac;
+  font-size: 15px;
+  font-family: Zapfino;
+  background: white;
+}
+
+
+button.clear-btn{
+  color: #787fac;
+  background: white;
+  text-shadow: 1.5px 1.5px 2px #feaaaa;
+  font-family: Zapfino;
+  font-size:  20px;
+  height: 25 px;
+  width: 400px;
+  border-radius: 0.5em;
+  border-color: #787fac
+
+}
+
+
+.manf-btn{
+  font-family: SignPainter;
+  color: white;
+  background: #feaaaa;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  border-radius: 7px;
+  border-color: white;
+  text-shadow: 1.5px 1.5px 2px #feaaaa;
+  padding: 20px 30px;
+  transition: 300ms;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20)
+}
+button.clear-btn:hover {
+  background: #eca7aaa1;
+}
+.manf-btn:hover {
+  background: white url("assets/peach-lotus-2.png") no-repeat top;
+}
